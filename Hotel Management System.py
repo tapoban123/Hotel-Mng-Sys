@@ -36,7 +36,7 @@ def next_entry(entry_widno):
 
 def newroot():
     global root2
-    root2 = tkGUI.Toplevel(root,bg='#7FFFD0')
+    root2 = tkGUI.Toplevel(root,bg='#E9D66B')
     root2.title('Fill the Details')
     root2.geometry('850x752')
 
@@ -51,16 +51,16 @@ def newroot():
     global entrywid9
     global entry_wid_list
 
-    Label(root2,text='Details of the Guest: ',font=('Calibri Bold',25),bg='#7FFFD0',fg='#E9D66B').place(x=10,y=10)
-    Label(root2,text="Guest ID:",font=('Calibri',20),bg='#7FFFD0',fg='#0F0F0F').place(x=10,y=50)
-    Label(root2,text='Name:',font=('Calibri',20),bg='#7FFFD0',fg='#0F0F0F').place(x=10,y=90)
-    Label(root2,text='Phone No.:',font=('Calibri',20),bg='#7FFFD0',fg='#0F0F0F').place(x=10,y=130)
-    tkGUI.Label(root2,text='Address:',font=('Calibri',20),bg='#7FFFD0',fg='#0F0F0F').place(x=10,y=170)
-    tkGUI.Label(root2,text='Date of Arrival:',font=('Calibri',20),bg='#7FFFD0',fg='#0F0F0F').place(x=10,y=210)
-    tkGUI.Label(root2,text='Time of Checking In:',font=('Calibri',20),bg='#7FFFD0',fg='#0F0F0F').place(x=10,y=250)
-    Label(root2,text='Time of Checking Out:',font=('Calibri',20),bg='#7FFFD0',fg='#0F0F0F').place(x=10,y=290)
-    Label(root2,text='Car No:',font=('Calibri',20),bg='#7FFFD0',fg='#0F0F0F').place(x=10,y=330)
-    Label(root2,text='Room No:',font=('Calibri',20),bg='#7FFFD0',fg='#0F0F0F').place(x=10,y=370)
+    Label(root2,text='Details of the Guest: ',font=('Calibri Bold',25),bg='#E9D66B',fg='#000000').place(x=10,y=10)
+    Label(root2,text="Guest ID:",font=('Calibri',20),bg='#E9D66B',fg='#000000').place(x=10,y=50)
+    Label(root2,text='Name:',font=('Calibri',20),bg='#E9D66B',fg='#000000').place(x=10,y=90)
+    Label(root2,text='Phone No.:',font=('Calibri',20),bg='#E9D66B',fg='#000000').place(x=10,y=130)
+    tkGUI.Label(root2,text='Address:',font=('Calibri',20),bg='#E9D66B',fg='#000000').place(x=10,y=170)
+    tkGUI.Label(root2,text='Date of Arrival:',font=('Calibri',20),bg='#E9D66B',fg='#000000').place(x=10,y=210)
+    tkGUI.Label(root2,text='Time of Checking In:',font=('Calibri',20),bg='#E9D66B',fg='#000000').place(x=10,y=250)
+    Label(root2,text='Time of Checking Out:',font=('Calibri',20),bg='#E9D66B',fg='#000000').place(x=10,y=290)
+    Label(root2,text='Car No:',font=('Calibri',20),bg='#E9D66B',fg='#000000').place(x=10,y=330)
+    Label(root2,text='Room No:',font=('Calibri',20),bg='#E9D66B',fg='#000000').place(x=10,y=370)
 
     entrywid1 = Entry(root2,width=30,border=5,font=("Arial 14"),bg='#DCDCDC')
     entrywid2 = Entry(root2,width=30,border=5,font=('Arial 14'),bg='#DCDCDC')
@@ -166,12 +166,12 @@ def update_info():
     global root7
     global entrywid1r7
 
-    root7 = Toplevel(root)
+    root7 = Toplevel(root,bg='#8A2BE2')
     root7.title('Update Record')
     root7.geometry('500x175')
 
-    Label(root7,text="Fill the detail and press Enter or 'OK'",font=('Italic Bold',18)).place(x=10,y=10)
-    Label(root7,text='Enter Guest ID:',font=('Calibri Bold',14)).place(x=10,y=54)
+    Label(root7,text="Fill the detail and press Enter or 'OK'",font=('Italic Bold',18),bg='#8A2BE2',fg='#E7FEFF').place(x=10,y=10)
+    Label(root7,text='Enter Guest ID:',font=('Calibri Bold',14),bg='#8A2BE2',fg='#E7FEFF').place(x=10,y=54)
 
     entrywid1r7 = Entry(root7,width=18,border=5,font=('Arial 14'))
     entrywid1r7.place(x=200,y=54)
@@ -205,14 +205,14 @@ def ok_update():
             for rec in update_rec:
                 root7.geometry('500x600')
 
-                Label(root7,text='Name:',font=('Calibri Bold',18)).place(x=10,y=190)
-                Label(root7,text='Phone Number:',font=('Calibri Bold',18)).place(x=10,y=230)
-                Label(root7,text='Address:',font=('Calibri Bold',18)).place(x=10,y=270)
-                Label(root7,text='Date of Arrival:',font=('Calibri Bold',18)).place(x=10,y=310)
-                Label(root7,text='Check In:',font=('Calibri Bold',18)).place(x=10,y=350)
-                Label(root7,text='Check Out:',font=('Calibri Bold',18)).place(x=10,y=390)
-                Label(root7,text='Car Number:',font=('Calibri Bold',18)).place(x=10,y=430)
-                Label(root7,text='Room Number:',font=('Calibri Bold',18)).place(x=10,y=470)
+                Label(root7,text='Name:',font=('Calibri Bold',18),bg='#8A2BE2',fg='#E7FEFF').place(x=10,y=190)
+                Label(root7,text='Phone Number:',font=('Calibri Bold',18),bg='#8A2BE2',fg='#E7FEFF').place(x=10,y=230)
+                Label(root7,text='Address:',font=('Calibri Bold',18),bg='#8A2BE2',fg='#E7FEFF').place(x=10,y=270)
+                Label(root7,text='Date of Arrival:',font=('Calibri Bold',18),bg='#8A2BE2',fg='#E7FEFF').place(x=10,y=310)
+                Label(root7,text='Check In:',font=('Calibri Bold',18),bg='#8A2BE2',fg='#E7FEFF').place(x=10,y=350)
+                Label(root7,text='Check Out:',font=('Calibri Bold',18),bg='#8A2BE2',fg='#E7FEFF').place(x=10,y=390)
+                Label(root7,text='Car Number:',font=('Calibri Bold',18),bg='#8A2BE2',fg='#E7FEFF').place(x=10,y=430)
+                Label(root7,text='Room Number:',font=('Calibri Bold',18),bg='#8A2BE2',fg='#E7FEFF').place(x=10,y=470)
 
                 entrywid2r7 = Entry(root7,width=25,border=5,font=('Arial 14'))
                 entrywid3r7 = Entry(root7,width=25,border=5,font=('Arial 14'))
